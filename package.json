@@ -15,5 +15,21 @@
     "eslint-plugin-node": "^2.0.0",
     "eslint-plugin-spellcheck": "0.0.7",
     "eslint-plugin-xo": "^0.5.1"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhGang/pos_v1-2019-6-13-7-40-25-697.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhGang/pos_v1-2019-6-13-7-40-25-697/issues"
+  },
+  "homepage": "https://github.com/AhGang/pos_v1-2019-6-13-7-40-25-697#readme"
 }
