@@ -1,16 +1,14 @@
 'use strict';
 function getItemList(inputs){
     var list = {}; 
-    
-    for(var i= 0, l = inputs.length; i< l; i++){ 
-        var item = inputs[i]; 
-        if(item.includes("-")){
-            let itemDetail = item.split("-");
-            list[itemDetail[0]]= list[itemDetail[0]] != null? (list[itemDetail[0]] + parseFloat(itemDetail[1])) : parseFloat(itemDetail[1]);
-        }else{
-            list[item] = (list[item] +1 ) || 1; 
-        }
-    } 
+    inputs.forEach(item => {
+      if(item.includes("-")){
+        let itemDetail = item.split("-");
+        list[itemDetail[0]]= list[itemDetail[0]] != null? (list[itemDetail[0]] + parseFloat(itemDetail[1])) : parseFloat(itemDetail[1]);
+    }else{
+        list[item] = (list[item] +1 ) || 1; 
+    }
+    })
     return list; 
 }
 function getBill(ItemList,allItems){
